@@ -1,0 +1,76 @@
+<table align="center" border="2">
+    <tr>
+        <th>STAMP</th>
+        <th>DEVID</th>
+        <th>STR1</th>
+        <th>STR2</th>
+        <th>STR3</th>
+        <th>STR4</th>
+        <th>STR4</th>
+        <th>STR5</th>
+        <th>STR6</th>
+        <th>STR7</th>
+        <th>ST8</th>
+        <th>STR9</th>
+        <th>ST10</th>
+        <th>STR11</th>
+        <th>STR12</th>
+        <th>STR13</th>
+        <th>STRAVG</th>
+        <th>VOL1</th>
+        <th>VOL2</th>
+        <th>VOL3</th>
+        <th>VOL4</th>
+        <th>VOL5</th>
+        <th>VO6</th>
+        <th>VOL7</th>
+        <th>VOL8</th>
+        <th>VOL9</th>
+        <th>VOL10</th>
+        <th>VOL11</th>
+        <th>VOL12</th>
+        <th>VOL13</th>
+        <th>VOLAVG</th>
+        <th>TEMP</th>
+        <th>POWERAVG</th>
+        {% for x in data %}
+            <tr>
+            <th>{{ x.stamp }}</th>
+            <th>{{ x.devId }}</th>
+            <th>{{ x.str1 }}</th>
+            <th>{{ x.str2 }}</th>
+            <th>{{ x.str3 }}</th>
+            <th>{{ x.str4 }}</th>
+            <th>{{ x.str5 }}</th>
+            <th>{{ x.str6 }}</th>
+            <th>{{ x.str7 }}</th>
+            <th>{{ x.str8 }}</th>
+            <th>{{ x.str9 }}</th>
+            <th>{{ x.str10 }}</th>
+            <th>{{ x.str11 }}</th>
+            <th>{{ x.str12 }}</th>
+            <th>{{ x.str13 }}</th>
+            <th>{{ x.vol1 }}</th>
+            <th>{{ x.vol2 }}</th>
+            <th>{{ x.vol3 }}</th>
+            <th>{{ x.vol4 }}</th>
+            <th>{{ x.vol5 }}</th>
+            <th>{{ x.vol6 }}</th>
+            <th>{{ x.vol7 }}</th>
+            <th>{{ x.vol8 }}</th>
+            <th>{{ x.vol9 }}</th>
+            <th>{{ x.vol10 }}</th>
+            <th>{{ x.vol11 }}</th>
+            <th>{{ x.vol12 }}</th>
+            <th>{{ x.vol13 }}</th>
+            <th>{{ x.temp }}</th>
+            <th>{{ x.stravg }}</th>
+            <th>{{ x.volavg }}</th>
+            <th>{{ x.poweravg }}</th>
+            </tr>
+        {% endfor %}
+
+
+    </tr>
+<tr><th><a href="{{ url_for('line')}}">for graph</a> </th></tr>
+</table>
