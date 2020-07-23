@@ -33,7 +33,7 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
-db_URI = os.environ.get('DATABASE_URL', 'sqlite:///test.db')
+db_URI = os.environ.get('DATABASE_URL')
 engine = create_engine(db_URI)
 
 
@@ -145,7 +145,7 @@ d = {}
 
 
 
-@app.route("/favicon.ico")
+@app.route('/')
 def home():
     res=smb.query.all()
     return render_template("smb.html", data=res)
