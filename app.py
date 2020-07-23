@@ -145,7 +145,7 @@ d = {}
 
 
 
-@app.route('/favicon.ico')
+@app.route('/')
 def home():
     res=smb.query.all()
     return render_template("smb.html", data=res)
