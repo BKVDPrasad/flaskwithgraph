@@ -1,1 +1,1 @@
-web: gunicorn app:kvdp
+web:gunicorn app:kvdp
