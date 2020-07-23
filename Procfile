@@ -1,1 +1,1 @@
-web:gunicorn app:kvdp
+reminder: python src/quickstart.py
