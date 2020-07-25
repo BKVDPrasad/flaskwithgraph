@@ -215,7 +215,7 @@ def line():
 
     line_labels=l1
     line_values=l2
-    return render_template('line_chart.html', title='TRACKER', max=100, labels=line_labels, values=line_values,data=res,data1=single)
+    return render_template('line_chart.html', title='TRACKER', max=100, labels=line_labels, values=line_values,data=res)
     
 
 
