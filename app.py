@@ -186,10 +186,10 @@ def line():
 
     res = User.query.all()
     print('res')
-    i=res[0]
+    #i=res[0]
     print('hi')
-    print(i)
-    print(type(i))
+    #print(i)
+    #print(type(i))
 
     l1=[]
     l2=[]
