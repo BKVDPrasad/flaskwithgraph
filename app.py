@@ -1,19 +1,12 @@
 from flask import Flask, render_template
-
 app = Flask(__name__)
 from matplotlib import pyplot as plt
-# import dash
-# import dash_core_components as dcc
-# import dash_html_components as html
-# import dash_bootstrap_components as dbc
+
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-# import dash
-# import dash_bootstrap_components as dbc
-# import dash_core_components as dcc
-# import dash_html_components as html
+
 import sqlite3
-# from dash.dependencies import Input, Output, State
+
 import paho.mqtt.client as mqtt
 import time
 import pandas as pd
@@ -25,9 +18,7 @@ from six.moves.urllib.parse import quote
 from sqlalchemy import create_engine
 from datetime import datetime, timedelta
 import unicodedata
-# import dash_daq as daq
-# from flask_mqtt import Mqtt
-# from flask_socketio import SocketIO
+
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
