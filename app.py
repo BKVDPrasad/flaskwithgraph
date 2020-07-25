@@ -200,7 +200,7 @@ def line():
         l1.append(d)
         l2.append(spa)
 
-    single=res[0]
+    #single=res[0]
     labels = [
         '9:00', '9:15', '9:30', '9:45',
         '10:00', '10:15', '10:30', '10:45',
@@ -216,7 +216,7 @@ def line():
     line_labels=l1
     line_values=l2
     return render_template('line_chart.html', title='TRACKER', max=100, labels=line_labels, values=line_values,data=res,data1=single)
-    return None
+    
 
 
 
